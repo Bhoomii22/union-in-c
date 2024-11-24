@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    union size1{
+        int x;
+        char y;
+    }test1;
+union size2{
+    int x;
+    float y;
+} test2;
+union size3{
+    int arr[60];
+    char y;
+}test3;
+
+    printf("%d\n",sizeof(test1));
+    printf("%d\n",sizeof(test2));
+    printf("%d\n",sizeof(test3));
+
+    return 0;
+}
